@@ -131,16 +131,14 @@ input{
 	padding: 0.5em;
 	margin-top: 0.5em;
 }
-/* For mobile phones: */
-[class*="img"] {
-  width: 100%;
+@media (max-width: 768){
+	.item-tile{
+		width: 100%;
+	}
 }
 
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .img {width: 33.33%;}
-  }
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .img {width: 25%;}
-  }
+@media screen and (min-width: 769px){
+	.item-tile{
+		width: 30%;
+	}
+}
